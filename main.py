@@ -44,8 +44,8 @@ try:
         # format
         time_only_str = timestamp_tz.strftime('%H:%M:%S')
         date_only_str = timestamp_tz.strftime('%d/%m/%Y')
-        temp_str = f"Temp: {temperature_celsius:.1f}C"
-        hum_str = f"Humidity: {humidity:.1f}%"
+        temp_str = f"Temp: {temperature_celsius:.2f}C"
+        hum_str = f"Humidity: {humidity:.2f}%"
         pres_str = f"Pressure: {pressure:.2f} hPa"
 
         # console log
@@ -67,7 +67,7 @@ try:
         disp.show()
 
         # update interval
-        time.sleep(0.1)
+        time.sleep(1)
 
 except KeyboardInterrupt:
     print("Program stopped by user.")
